@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<!-- 
+
+fav icon iconu değiştiriyor.
+
+googledan favicon ubluyourz
+favicon.ico tr flag diye
+uzantısı ico ılan dosya al.
+ico formatında indir.
+projenin dizinde bunu oraya at
+ismini değiştirebilirsin.
+yemekhane.aku.edu.tr kaynak koduna girdik
+favicon html diye arat
+ordan w3 schoooldan linki bul favicon lniki
+benim bulunduğum dizide href te favicon.ico yaz çıkar
+type yapmazsakta olur.
+
+Şimdi geldim body içine
+öncelikle 
+div.content tab yap.
+
+style na geldim content width 100 yaptım
+height 100
+background color red verdim
+100x100 kutu yaptım
+başlangıçta 5px boşluk var
+html bdefault boşluk değerdir.
+*{
+padding 0px dış boşluk
+margin 0px iç boşluk
+
+
+}
+
+yüzde 80 i kadar width yapsak
+yükseliğimde %80 olsun
+yükseklikte yüzde değer verirken vh
+80vh yap.
+derste işlerken sayfanın tam ortasına getirmeyi görmöüştük
+position absolute verirsen
+left soldan 50 gel
+sayfanın genişliğnini yüzde 50 si soldan ilerledi
+yukardan 50 yaparsan
+yukardan sayfanın yüzde 50 si kadar aşağı düştü
+kutunun boyutu kadar yüzde 50 geri gel
+transform translatex-50
+kutnuun genişliğinin yarısı kadar geri gelmiş olur
+translateY -50
+ben sayfamda bir sürükleyerek büyüttüğüm zaman yukardan küçülttüğüm zaman yükselik değişecek
+
+Ben dedim ki border-radius 30 derece olursa kçşeler 30 derece olur 30 piksel boşluk
+0 0 a dırda yaslı
+padding 30px yazdım 30 piksel iç boşluk verdim
+
+max-width 80%yapsam
+paddingi 30px dersem
+büyüdü
+paddingi şimdi boş bıraktım
+
+body de divin içine contenttin
+div.main dedim classa main dedim
+
+main{
+
+margin 30px ver bura düzelir.
+bu şekilde içeriğine yeni kutu olupşturarak f12 ile contenin içine bak köşesinde border radius vermeme rağmen kara alan görünüyor
+amaf12 de görünüyor
+turuncu alanlar padding contentten main seçersek
+mainin bulunduğu alan seçili alan kadar
+margini bu kadar border yok padding yok
+console ekranondan bütün hataları görebiliyopruz.
+
+ 
+
+
+}
+
+mainin içerisine sol tarafa login resmi koyalım
+login page images googledan bak
+3.resim
+
+resimden yola çıkarak html nasıl tasarlanır.
+download yap.jpg uzantılı
+sayfanın ortasında icon var
+ben sayfaya icon eklicem
+herhangi icon olabilir.
+iconlar paket halinde iconlar yayınların
+font-awesome kullanacağız.
+font awesome kütüphane
+Start a gir
+
+font awesome cdn tıkla
+
+cloud ortamında yedeklenmiş buluruz.
+entegrasyonda kulllanabiliriz.
+
+title altında link ver
+linkle verirsin bunu
+
+nasıl kullanacağımı bilmiyorsam 
+fontawesome.com icon sekmesine gir.
+iconu araştırıcam searchden
+örnek user yaz
+
+ilk userı aldık
+alırken < i class ile başlayan bir şey var
+
+mainin içine koydum
+fontawesome cdn de css dosyasını projeme link kullanarak import ettim.
+classlara göre o css içinde tanımlamöalar var
+.
+bu tanımlamalar font awesome içerisinde yer alıyor.
+>i class="fa-salid fa -user"> main alanı içerisine yapıştırıdm
+Burda ortalama birebir tutmasa da 100 150 piksel yükselik var.
+
+
+
+
+div.icon-box diye div oluşturdum 
+bu div içine user icon attım
+
+
+Kademe kademe geliyoruz
+f12 ye bas icon boxı seç
+
+ordan css tanımlaması yap
+background: blue yaptım
+width 115 px dedim
+height 115px verdim
+border-raidus 50% kendi genişiğnini yüzde 50 si kadar
+sıra geldi icona
+
+.icon-box{
+//classı icon-box olan demek
+
+}
+
+
+i tagının iconunu rengini değiştircem
+color: #fff;
+font-size: 24px;
+margin: 28px 34px yaptım
+biri yukarı aşağı ikincisi sağ sol için geçerli
+
+
+.icon-box>i
+
+icon boxın içindeki i etiketi için
+
+
+width 50
+height 50 yaptım
+
+resime geldim dedim postion absolute
+transform translateY(-50%px)dicem translateX-50%); yaparsam
+
+top: 0px;
+left 50%
+yüzde 50 si kadar sağa yaslanır.
+
+
+Yukarıya göre sıfırncı konumyda yap
+bu yüzde 50 alanın yüzde 50 si
+burdaki transform da y ekseninde kendi yükseliğniin yarısı kadar geri git
+dikey eksende
+yatay eksende yüzde 50 geri gel
+
+transform kullanmadan da iconu yukarı çıkarabilriz.
+top:calc(0px - 60px); kutu 120 olduğu için 60 yaparsak kutunun yarısı kadar git demek
+önerilmez
+her ekran yapısı için özellikle responsive de başımıza bela olur kullanmayın.
+
+.content içine girdim
+backgorund-color beyazımsız bir renk verdim
+opacity: 1; //1 görünür 0 hiç görünmez demek 0.5 dersem yarısı görünür
+Bunun saydam olup olmadığını arka plan rengini değiştirirsem görürüm
+body e bir css atadım
+body{
+background-color grey yaptım
+Bu iconun renk değişikiğnii yapacağız.
+
+
+
+}
+
+
+
+photopea.com gir renk türünü öğrenmek için
+indirdiğim resmi photopea aktar
+mouse ile palete tıkla 
+hex alanını gör o rengi işte
+
+O resimde 2 inputum var
+
+body içinde div.form-group diye alan ekledim
+içine input yazdım tipi text
+placeholder denilen bir özellik var.
+placeholder="Username"
+sayfayı yenilediğimde defualt isim gelmesini sağlar.
+Saydam içerik görüntüleyici valuesı yok
+
+
+RGB yi anlatıyor şuan hoca.
+Red 255
+ green 255 
+ blue  255
+ totalde 3 ünde 255 oranında karışım sağlanabilir.
+ Matematikte binary
+ 255 karşılığı ff dir
+ # den sonra ff          98            00
+            kırmızıdan   yeşilden      mavi
+
+
+opacity 0.5 ti background coloru 3 karak varsa son 3 karakteri aynıdır
+3 karakter kendini tekrar eder
+#ddd gibi
+#dddddd aynı
+
+saydam özelliği kutuya verdik
+kutu değil benim ona verdiğim renk saydam olsun
+dddd nin karşılığı bir renk rgba sonundaki opacity
+
+neyse konumuza dönelim
+inputa geldik
+
+yukardan 65 px
+margin 80 30 10px yaptım
+30 hem sağ hem sol 80 yukarı ve aşağı için 10
+gittim inputa borderını yok ettim
+border : none yaptım
+width: bulunduğun alanın 100 % yüzdesi kadar alanı bullanacağın alana kadar kapla
+
+margin 0px auto;
+
+
+inputun background coloru #3b5473 phptopeadan öğrendim
+
+color: içerisindeki yazının rengi
+
+input:focus eğer input focus olursa input odaklanırsa
+{
+border: 0px border içermesin.
+outline none ordaki border değil dış çizgiymiş
+
+iconu değiştirmiş hoca 
+ilkine tıklayıpo user yazıyor ya regularlı olanı ekle
+
+inputa da getirdim bunu
+bu iconu inputun soluna atıcam
+
+position ansolute; 
+left 0;
+margin-top: üst taraf
+
+
+form group style da position relative verseydin
+sıfır noktası sen olurdun
+
+
+.form-group>i
+form grubun içerisinde yer alan i ye bu özelliklere ata de demek
+{
+    photopea dan input iconun rengini al
+    background color
+    user yazısı kötü oldu
+    input padding-left 30 px yap
+    icon rengim white yaptı
+    line-height 30 piksel satır yükseliği
+
+
+    satır yüksekliği kutu yüksekliği ile aynı olursa yazı dikeyde ortalanır.
+
+text-allign center yazı yatayda ortalanır
+
+sonra bu kutunun taşan 33 piksel sağdan var.
+width(100% - %33)
+
+
+
+
+
+}
+
+formgroup kopayaladım type passwords yaptım
+fontawesome.com girip log yazdım searche ye
+
+altta login butonu yapacağız
+
+color css gradient kulanacağız
+cssgradient vertical
+dikey bir color
+mainin dışına yaz
+
+<button class="btn-login"> Login</button>
+
+width: 80% bulnuduğu alanın yüzde 80 i olacak
+photopea da yükseklik 65 dedi
+height 30px dedim
+border:none yaptım 
+position: absolute dedikten sonra
+top: 100% bulunduğu kutunun alanı kadar üstten boşluk  ver
+contentten base al
+login contentin altına düşltü
+top: calc(100% + 2px);
+linear-gradient verdim background image ye(transparent,#dddd) yukarısı aşağısı
+
+css gradient vertical opacity dersem aşağısı boşluk gibi görünür
+
+
+
+
+}
+
+-webkit-mask-image: -webkit-gradient(linear,left top,left bottom,)
+from  to tarafında opacity 0 1 yap diğerini 0 dan 1 e doğru opacitysi gtisni
+
+border-radius vercem 0px 0px 15px 15px ; 
+left:10% ; 
+
+sayfanının bulunduğu alanın yüzde yüz diyelim relative verdiğimde  içindekiler pozisyon alırken ondan base alır
+
+yukarıdaki input etrafına border raidus verdim 5 piksellik
+
+
+form-group relative verdim
+
+
+
+.form-group>i
+
+border raidus 5px          
+
+
+text-transform uppercase texti büyüt
+
+
+font-weight: bold; kalın olmuş olur
+
+sayfanın ana contenti body
+
+ 
+backgorund-image: url('bg.jifif')
+
+gradient image generator yaz google 
+graident-generator olanı oldu GitHub yazılı
+
+
+
+-------
+* yazarsanız hepsi demek.
+body {
+
+
+}
+
+element ismini önünde herhangi bir seçici tipi yoksa class yada id
+class yazıyorsak nokta id de kare
+seçici tipler bu
+
+*{
+padding dış boşluk
+marign iç boşluk
+iç boşluk dış boşluk sıfır verirsem hiç boşluğu olmaz
+
+
+}
+html sayfasındaki bütün her şey.
+
+ 
+html sayfasında 5px 58px soldan üstten default boşluğu vardır.
+paddinge sıfıra sıfır vermezsek o defauly sizi ayrırı
+
+
+background-image: url('bg.jfif'); arka plana animasyonda eklenebilir.
+Biz burda resim ekledik arka plana resim uygula resmi url den al.
+bulunduğu dizideki bg.jifif dosyasını kendi içinde import et demek.
+bir sayfa yüklenirken html css javscript yüklenir.
+
+bazen javascripte func yazyıoruz
+bu func element görmmüyor
+html tagı yok
+css i aldığı zaman css elementten önce tanımlanması için head tagını yazarız.
+önce özellik renk tanımlanır.
+Kutu var olunca özellik tanımlansın.
+En büyük problem resim verecekler bu resmin aynısı frontta yaz diyecekler.
+
+Daha önce position absolute veriyorduk sayfamızı ortalıyorduk
+display: flex diye bir özellik var sayfa dizilim sırası belirtirken bir yöntemdir.
+display ettiğim flex yatay düzerken ortadan başlar
+dikey dizilimde tam ortadan başla demek
+justify-content center yatak olarak ortaya
+allign-items center  align hizalama demek 
+objeleri hizalamak
+height
+
+----------
+
+display flex ve  allign items kullanalılarak yapılan hizalama
+dış kutunun iç kutuların nasıl dizleceğine karar vermesidir
+diyebilriz.
+position absolute özellği ise
+kutunun kendi kendisinin nerede hizalanacağını belirlemesidir
+
+opaklık 0 ile 1 arasındaki değerlere sahiptir 1 den fazla değildir.
+position absolute diyerek dış alanda bulunan relative özelliği taşıyan kutuya göre hizalanacağım demek.
+RELATİVE ÖZELLİĞİNİ ANLATACAK OLURSAM BENİM BİR HTML SAYFAM VAR
+HTML SAYFAMIN ANA DİZİNİN DE DIŞ ALAN GEÇERLİDİR 
+BEN İÇERİSİNE EKLEDİĞİM BİR KUTUYA DERSEM Kİ SEN BİR POSITION RELATIVE 
+BUNUN İÇERİSİNDEKİ  KUTUNUN BAŞLANGICI ORASI OLUR
+RELATIVE KISACASI ŞU DEMEK POSITON RELATIVE YAPARSAM KİM EKLENİRSE DEFAULT HİZALAMASI BANA GÖREDİR
+NORMALDE SOL ÜST KÖŞEDEN DEFAULT HİZALANIYOR FAKAT RELATIVE VERİRSEM BENİM OLUŞTURDUĞUM ALANA GÖRE HİZALAMA YAPARSIN.
+
+margin 80px 50px 10px kutunun dikeyde 80 aşağıdan 10 piksel hem sağ hem sol tarafı belirler
+
+
+with heigh eşit olan tam kare kutularda border raidus 50% verdiğpimiz zaman tam yuvarlak oluşuyor.
+Genelde login ya da profil yada instagram hikayelerde yuvarlar yuvarlak kutular vardır aslında hepsi karedir
+raidusla yuvarlatılır
+top a 0px vermezsek 
+font size 48 piksel verirsek yazının boyutu 48 pikseldir
+
+form-group position relative verdim
+ona göre hizalanacak
+
+flex ortaya hizlaamak için position güzel yöntem
+
+yazı dikeyde ortalanmak istiyorsa line-height veririz.
+text-align center yatayda yazının bulunacağı alana center dedim
+
+border none border siler dış çerçeveyi siler
+position absolute ben kendi kafama göre hizalanacağım demek
+font-weight bold fontun kalınlığı demek
+
+
+
+bir content kutusu var
+contenin içlinde main var
+onun içerisinde bir icon box oluşutrudk
+ve icon boxın içerisine icon koyduk
+
+ondan sonra mainin içinde form group oluşturdum
+o form group içinde input oluşturdum
+ve icon var
+
+password da main içinde
+
+button main dışında
+
+    
+
+
+
+
+
+ -->

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- float right dersem sağa left dersem sola yaslanır.
+    2.yöntem margin dış boşluk -->
+    <style>
+        .content{
+            background-color: #ddd ;
+
+
+        }
+        /* contentin içerisindeki divler için */
+/* .content>div{
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+} */
+.left,.right{ /*classı left ve olan ve class ı right olan her yere bu özelliği kullan*/
+
+    width: 100px;
+    height: 100px; 
+    display: inline-block; /* içeriği kadar kaplamış alanı  */
+     /*   display: inline;  /* alanı kadar yap  */
+}
+
+        .left{
+
+      
+            background-color: #fafafa; 
+            float: right;
+        
+          
+
+           
+
+        }
+        .right{
+
+
+background-color: #c2c5;
+
+
+
+}
+
+
+
+    </style>
+</head>
+<body>
+<!-- div>div.left ile yaptım-->
+    <div class="content">
+        <div class="left">Kutu 1</div>
+        <div class="right">Kutu 2</div>
+     
+
+    
+
+
+
+    </div>
+
+    
+</body>
+</html>
